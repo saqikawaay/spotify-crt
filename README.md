@@ -18,7 +18,6 @@ Spotify CRT gives you a mini spotify player with album art that is glassmorphic 
 ## Features
 
 -   [] 📺 Get your favourite playlists easily
--   [] 🔋 PWA Mode to install easily
 -   [] 📼 Retro CRT feeling inspired by Lofi Flow
 -   [] 📼 Spotify Connect compatible 
 
@@ -40,11 +39,7 @@ Inspiration for CRT effect came from Lofi Flow, who got it from:
 
 
 
-## Deploy
-uses build directory to deploy as a firebase app. 
-
-
 ### Updating
-'npm run build' will build it
-
-'firebase deploy' will deploy it. 
+'npm run dev' engages the frontend
+Also need to run the /server directory (which is on locahost:3000)
+`node ./server .` will run that. 
