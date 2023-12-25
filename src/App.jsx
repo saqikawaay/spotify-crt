@@ -1,25 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  /*  const [token, setToken] = useState('');
 
+  useEffect(() => {
+
+    async function fetchToken() {
+      const response = await fetch('/auth/token');
+      const json = await response.json();
+      setToken(json.access_token);
+    }
+    getToken();
+    console.log(token); 
+  }, []);
+  
+  */
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        
+          <img src='src/assets/spotify-crt.jpg' className="logo" alt="Vite logo" />
       </div>
-      <h1>Vite + React</h1>
+      <h1>Spotify CRT</h1>
+      <h3>for that lo-fi vibe.</h3>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          Login {count}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
